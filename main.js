@@ -9,6 +9,23 @@
                  No errors! Congratulations!
  *************************************************************** */
 
+let firstName = 'Ryan';
+console.log(firstName);
+
+let lastName = 'Cronin';
+console.log(lastName);
+
+const birthYear= 1983;
+console.log(birthYear);
+
+let currentYear = 2017;
+console.log(currentYear);
+
+let middleName;
+console.log(middleName);
+
+let age = (currentYear - birthYear);
+console.log(age);
 
  // TODO 1:
  // (a) DECLARE and INSTANTIATE a few variables:
@@ -22,7 +39,12 @@
  //     your `birthYear` and the `currentYear`
  //     (NOTE: DO NOT simply assign a number to the `age` variable, use an expression!)
 
+let greeting = 'Hello there';
+greeting = greeting + ' ' + firstName + '!';
+console.log(greeting);
 
+let decades = Math.floor((birthYear - 1900) / 10);
+console.log(decades);
 
  // TODO 2:
  // (a) Create a `greeting` variable as a string which says:  "Hello there _____!"
@@ -34,6 +56,26 @@
  //     NOTE: You MUST USE an expression for this, it may have more than one operation!
 
 
+let style; {
+  if (age<35) {
+    style='hip';
+    console.log('hip');
+  } else {
+    style='classic';
+    console.log('classic');
+  }
+}
+
+let instructorIsAwesome = true;
+
+let review = 'good';{
+  if (instructorIsAwesome === true) {
+  console.log('good');
+  } else {
+  review = 'bad';
+  console.log('bad');
+  }
+}
 
  // TODO 3:
  // (a) Declare a new variable called `style`, but do not instantiate it immediately.
@@ -46,7 +88,34 @@
  //     Next, declare a variable called `review`, then either assign "good" or "bad"
  //         depending on the value of `instructorIsAwesome`
  //     NOTE: You MUST use code to determine which value to assign to `review`!
+ //
+ //
+ //
+let theAnswer = math(5, 5, 'add');
+console.log(theAnswer);
 
+
+function math(firstNumber, secondNumber, operator) {
+  if (operator === 'add'){
+    let theAnswer = firstNumber + secondNumber;
+    return theAnswer;
+  }
+  if (operator === 'subtract'){
+    let theAnswer = firstNumber - secondNumber;
+    return theAnswer;
+  }
+  if (operator === 'multiply'){
+    let theAnswer = firstNumber * secondNumber;
+    return theAnswer;
+  }
+  if (operator === 'divide'){
+    let theAnswer = firstNumber / secondNumber;
+    return theAnswer;
+  }
+  else {
+    return NaN;
+  }
+}
 
 
  // TODO 4:
@@ -62,6 +131,24 @@
  //     then it should return the value for something that is Not a Number
 
 
+
+function madlib (wordOne, wordTwo, wordThree, wordFour){
+
+   if (wordOne === undefined){
+     wordOne = 'bananas';
+   }
+   if (wordTwo === undefined){
+     wordTwo = 'bananas';
+   }
+   if (wordThree === undefined){
+     wordThree = 'bananas';
+   }
+   if (wordFour === undefined){
+     wordFour = 'bananas';
+   }
+
+   return ('I prefer ' + wordOne + ' while I ' + wordTwo + ' so that I don\'t ' + wordThree + ' on the ' + wordFour + '.');
+}
 
 
  // TODO 5:
