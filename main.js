@@ -15,10 +15,10 @@ console.log(firstName);
 let lastName = 'Cronin';
 console.log(lastName);
 
-const birthYear= 1983;
+const birthYear = 1983;
 console.log(birthYear);
 
-let currentYear = 2017;
+let currentYear = 2018;
 console.log(currentYear);
 
 let middleName;
@@ -131,7 +131,7 @@ function math(firstNumber, secondNumber, operator) {
  //     then it should return the value for something that is Not a Number
 
 
-
+console.log(madlib('Ryan','Ryan','John'));
 function madlib (wordOne, wordTwo, wordThree, wordFour){
 
    if (wordOne === undefined){
@@ -151,6 +151,7 @@ function madlib (wordOne, wordTwo, wordThree, wordFour){
 }
 
 
+
  // TODO 5:
  // (a) Write a function called `madlib` that takes 4 separate words as
  //     arguments. The function should insert the words into this sentence:
@@ -160,8 +161,10 @@ function madlib (wordOne, wordTwo, wordThree, wordFour){
  // (b) If any of the words is not provided to the function then it should use
  //     the word "bananas" instead.
 
-
-
+console.log(reverse(madlib()));
+function reverse(str){
+  return str.split('').reverse().join('');
+}
 
  /* ******************************************************************
                               Adventure Mode
